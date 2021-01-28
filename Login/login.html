@@ -1,0 +1,200 @@
+﻿    <!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>PIAIC</title>
+    
+    <style>
+
+        body{
+            background-color:darkgrey;
+            padding: 0px;
+            margin: 0px;
+        }
+        
+        nav{
+            height: 80px;
+            background-color:darkslategrey;
+        }  
+        img{
+            width:10%;
+            float:left;
+        }
+        #nav-bar{     
+            width: 80%;
+            margin: 0 auto;
+            
+        }
+        ul.home {
+            display:inline-flex;
+            float: right;
+             list-style:none;
+             line-height: 60px;
+            }
+         a.home {
+            padding: 15px;
+            color:white;
+            font-family:'Times New Roman', Times, serif;
+            font-size:larger;
+            text-decoration:none;
+             }
+        a.home:hover{
+            background-color:brown;
+        }
+        .submenu{
+            display:none;
+        }
+        a.home:hover .submenu{
+            display:block;
+            position:absolute;
+            background-color: forestgreen;
+            color: white;
+            margin-top: 15px;
+            margin-left:-15px;
+        }
+        div img {
+            width: 302px;
+            height: 502px;
+        }
+  
+        
+       .main{
+           display:inline-flex;
+           text-align: center;
+          width: 200px;
+          height: 150px;
+           padding: 50px;
+           list-style: none;
+           }
+       .main:hover{
+           background-color: black;
+           color: white;
+           font-size:larger;
+       }
+    
+       
+       #ai{
+           background-color:saddlebrown;
+           padding: 50px;
+           
+       }
+       #cnc{
+           background-color:yellow;
+           padding: 50px;
+         }
+       #bcc{
+           background-color:blue;
+           padding: 50px;
+       }
+       #iot{
+           background-color:darkorange;
+           padding: 50px;
+       }
+      input{
+          background-color:aquamarine;
+          width: 100px;
+          border-color:aquamarine;
+          }
+      #button{
+          float:right;
+          padding: 50px;
+      }
+      #ap{
+          display:inline-flex;
+          color:navajowhite;
+          font-family:Arial;
+          word-spacing: 20px;
+          letter-spacing: 15px;
+      }
+      .mission{
+          text-align:center;
+      }
+      
+    </style>
+  </head>
+<body>
+    <nav>
+        <img src="../../0.png" height="100" />
+        <div id="nav-bar">
+
+            <ul class="home">
+                <li>
+                    <a href="#" class="home">How it works</a>
+                </li>
+                <li>
+                    <a href="../signin.html" class="home">Apply</a>
+                </li>
+                <li>
+                    <a href="#" class="home">Available Programs</a>
+                    <div class="submenu" >
+                    <ul >
+                        <li>Artificial Intelligence</li>
+                        <li>Cloud Computing</li>
+                        <li>Internet of things</li>
+                        <li>BlockChain</li>
+                    </ul>
+                        </div>
+                </li>
+                <li>
+                    <a href="#" class="home">About</a>
+                </li>
+            </ul>
+
+
+        </div>
+    </nav>
+    <div>
+        <img src="../../president.png" />
+        <br />
+
+        <h1 class="mission">PRESIDENT INITIATIVE</h1>
+
+        <h3 class="mission">for Artificial Intelligence and Cloud Computing (PIAIC)</h3>
+        <br />
+        <p class="mission">
+            PIAIC aims to reshape Pakistan's youth by providing quality education in the field of modern technologies
+            <br />
+            and get them ready for 4<sup>th</sup>Industrial Revolution.
+        </p>
+        <br />
+        <br />
+        <br />
+        <br />
+        <p id="button">
+            <a href="../signin.html"><input type="submit" value="Apply" /></a><b>  | 100K</b>
+        </p>
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+
+        <h1 id="ap">AVAILABLE  PROGRAMS </h1>
+
+
+    </div>
+   <div class="main">
+    <div id="ai">
+        Artificial Intelligence
+     </div>
+   </div>
+    <div class="main">
+        <div id="cnc">
+            Cloud Native Computing
+          </div>
+     </div>
+    <div class="main">
+        <div id="bcc">
+            Block Chain
+        </div>
+     </div>
+    <div class="main">
+        <div id="iot">
+        Internet of things
+        </div>
+    </div>
+     
+</body>
+</html>

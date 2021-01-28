@@ -1,0 +1,86 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>form</title>
+</head>
+<body>
+    <div>
+        <a href="../index.html">About</a>
+  </div>
+    <h2 align="middle">Enterence Form</h2>
+    <form action="http://www.example.com/login.php" >
+        
+        <fieldset>
+            <legend>Personal info</legend>
+            <p >
+                First Name:
+                <input type="text" required/>
+                Last Name:
+                <input type="text" required/>
+            </p>
+            <p>
+                Password:
+                <input type="password" required/>
+                <br />
+                <br />
+                Re-Enter Password:
+                <input type="password" required/>
+            </p>
+            <p>
+                Date of Birth:
+                <input type="date"value="dob" />
+                <br />
+                <br />
+                Please enter your email:
+                <input type="email"name="email" />
+
+            </p>
+            <p>
+                Gender:
+                <input type="radio" name="Gender" value="M" />Male
+                <input type="radio" name="Gender" checked value="F" />Female
+            </p>
+        </fieldset>
+        <p>
+            Interests:
+            <input type="checkbox" name="Interests" value="men"/>Men's clothing
+            <input type="checkbox" name="Interests" value="wmen" />Women's clothing
+            <input type="checkbox" name="Interests" vlaue="acc" />Accessories
+
+        </p>
+        <p>
+
+            Nationality:
+            <select value="countries" >
+                <option value="Pakistan">Pakistan</option>
+                <option value="China">China</option>
+                <option value="Afghanistan">Afghanistan</option>
+
+            </select>
+
+
+        </p>
+        
+        
+        
+        Comments:
+            <br />
+            <textarea type="comments" rows="5" cols="20">Enter your comments...</textarea>
+
+      <p>
+          Upload Profile Picture:
+          <input type="file"name="dp" />
+          <br />
+          <br />
+          <input type="submit" value="upload"/>
+
+      </p>
+
+        <input type="submit" />
+
+
+    </form>
+</body>
+</html>
