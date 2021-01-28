@@ -540,7 +540,7 @@ function isBirthDay(date) {
 }
 isBirthDay("Oct 30, 2019");
 
-
+/*
 
 function guessGame() {
     var randNum = Math.floor(Math.random() * 100);
@@ -585,6 +585,229 @@ function guessGame() {
 }
 
 guessGame();
+
+*/
+
+
+function is_array(value) {
+    if (typeof (value) === "object") {
+        return true;
+    }
+    else {
+        return false;
+    }
+}
+console.log(is_array('w3resource'));
+console.log(is_array([1, 2, 4, 0]));
+
+
+
+
+function first(value, n) {
+    var val1;
+    if (typeof (value) === 'object' && n >= 0) {
+        val1 = value.slice(0, n);
+        return val1;
+    }
+}
+console.log(first([7, 9, 0, -2]));
+console.log(first([], 3));
+console.log(first([7, 9, 0, -2], 3));
+console.log(first([7, 9, 0, -2], 6));
+console.log(first([7, 9, 0, -2], -3));
+
+
+
+
+
+function last(arr, n) {
+    var val1;
+    if (typeof (arr) === 'object' && n >= 0 && n < arr.length) {
+        val1 = arr.slice(arr.length - n, arr.length);
+        return val1;
+    }
+    else if (typeof (arr) === 'object' && n > arr.length) {
+        return arr;
+    }
+    else {
+        return arr[arr.length - 1];
+    }
+}
+
+
+
+console.log(last([7, 9, 0, -2]));
+console.log(last([7, 9, 0, -2], 3));
+console.log(last([7, 9, 0, -2], 6));
+
+
+
+myColor = ["Red", "Green", "White", "Black"];
+var str = ''
+for (var x in myColor) {
+    str = str + myColor[x] + ",";
+}
+console.log(str.slice(0, str.length-1));
+
+
+var nums = '01234678102';
+var result = [];
+for (var i = 1; i < nums.length; i++) {
+    if (((Number(nums[i - 1])) % 2 === 0) && (Number(nums[i]) % 2) === 0) {
+            //0                                        //1
+           //1                                        //2
+           //2                                        //
+        result.push('-', nums[i]);
+    }
+    else {
+        result.push(nums[i]);
+    }
+}
+console.log(result.join(""));
+
+
+
+var num = window.prompt();
+console.log(num);
+var str = num.toString();
+console.log(str);
+var result = [];
+for (let x = 1; x < str.length; x++) { //1
+    if ((str[x - 1] % 2 === 0) && (str[x] % 2 === 0)) {
+        //0                         //2
+        //2                        //3
+        //3                           //4
+        //4                          //6
+        //6                           //8
+        result.push('-', str[x]);
+        console.log(result);
+    }
+    else {
+        result.push(str[x]);
+        console.log(result);
+    }
+}
+console.log(result);
+
+
+var arr1 = [3, 8, 7, 6, 5, -4, 3, 2, 1];
+arr1.sort(function (a, b) { return a - b; })
+console.log(arr1);
+
+
+var arr1 = [3, 'a', 'a', 'a', 2, 3, 'a', 3, 'a', 2, 4, 9, 3, 3];
+var a = 1;
+var b = 0;
+var item;
+for (var i = 0; i < arr1.length; i++) {
+    for (var j = i; j < arr1.length; j++) {
+        if (arr1[i] === arr1[j]) {
+            b = b + 1;
+            if (a < b) {
+                a = b;
+                item = arr1[i];
+            }
+        }
+    }
+    b = 0;
+}
+console.log(item + " is "+ a + " Times present")
+
+
+
+var str = 'The Quick Brown Fox';
+var str1 = '';
+for (var x in str) {
+    if (str[x] === str[x].toLowerCase()) {
+        str1 = str1 + str[x].toUpperCase();
+    }
+    else if (str[x] === str[x].toUpperCase()) {
+        str1 = str1 + str[x].toLowerCase();
+    }
+    else {
+        str1 = str1 + " "; 
+    }
+}
+console.log(str1);
+
+
+
+var a = [[1, 2, 1, 24], [8, 11, 9, 4],
+[7, 0, 7, 27], [7, 4, 28, 14], [3, 10, 26, 7]];
+var c;
+var b = ''
+for (var x in a) {
+    console.log("Row " + x);
+    for (var y in a[x]) {
+        b = b + a[x][y] + " "
+    }
+    c = b;
+    b = 0
+    console.log(c);
+}
+
+
+function square(value) {
+    var add = 0;
+    var mul = 1;
+    for (var x in value) {
+        var q = value[x];
+        add = add + q;
+        mul = mul * q;
+    }
+    console.log(add);
+    console.log(mul)
+}
+square([4, 1, 2, 3]);
+
+
+var blank = [];
+blank.push(10, 20, 30, 200);
+for (var x in blank) {
+    console.log("Element " + x + " = " + blank[x]);
+}
+
+
+var arr = [1, 2, 3, 'a', 'b', 2, 1, 'a'];
+var arr2 = [];
+for (var x in arr) {
+    if (arr2.indexOf(arr[x]) === -1) {
+        arr2.push(arr[x]);
+    }
+} 
+console.log(arr2);
+
+
+
+color = ["Blue ", "Green", "Red", "Orange", "Violet",
+    "Indigo", "Yellow "];
+o = ["th", "st", "nd", "rd"]
+var m = o.shift();
+o.push(m);
+for (var h = 0; h < color.length; h++) {
+    if (h < 3) {
+        console.log(h+1 + o[h] + " is " + color[h]);
+    }
+    else {
+        console.log(h + 1 + o[o.length-1] + " is " + color[h]);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
