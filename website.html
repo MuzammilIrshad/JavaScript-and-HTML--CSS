@@ -1,0 +1,81 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>menubar</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            
+        }
+        .menubar{
+            background-color: black;
+            text-align: center;
+        }
+        .menubar ul{
+            display:inline-flex;
+            color: white;
+            list-style: none;
+        }
+        .menubar ul li{
+            width: 150px;
+            margin: 15px;
+            padding: 15px;
+        }
+        li>a{
+            color: white;
+            text-decoration: none;
+        }
+        
+        li:hover{
+            background-color: white;
+            border-radius: 10px;
+            }
+        li:hover>a{
+            color: black;
+        }
+        .submenu{
+            display:none;
+        }
+        li:hover .submenu{
+            display:block;
+            position: absolute;
+            background-color: white;
+            margin-top: 15px;
+            margin-left: -160px;
+        }
+       li:hover .submenu ul{
+            display: block;
+            margin: 10px;
+        }
+       .submenu:hover ul>li{
+           color: white;
+           background-color:black;
+       }
+    </style>
+</head>
+<body>
+
+    <div class="menubar">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Available Programs</a>
+            <div class="submenu">
+                <ul>
+                   <li>Artificial Intelligence</li>
+                   <li>Internet of things</li>
+                   <li>BlockChain</li>
+                   <li>Cloud Computing</li>
+               </ul>
+             </div>
+             </li>
+            <li><a href="#">How it works</a></li>
+
+        </ul>
+    </div>
+    <img src="../piaic.jpg" />
+</body>
+</html>

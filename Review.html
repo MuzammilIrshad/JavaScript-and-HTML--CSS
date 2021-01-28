@@ -1,0 +1,87 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>form3</title>
+    <style>
+        h1 {
+            font-size:larger;
+            color: brown;
+            border-color:chocolate;
+        }
+        label {
+            color:darkgoldenrod;
+            font-size:large;
+            font-family:Arial;
+        }
+    </style>
+</head>
+<body>
+    <br />
+    <h1 align="center">Enterence Form</h1>
+
+    <form action="www.example.index.php">
+        <fieldset style="background-color:black;">
+        <label>Personal Info</label>
+        <p style="color:burlywood;">First Name: <input type="text" />
+           Last Name:  <input type="text" />        
+        <br />
+        <br />
+        Password:  <input type="password"  />
+        <br />
+        <br />
+        Re-Enter Password: <input type="password" style="background-color:darkgrey;"/>
+        <br />
+        <br />
+        Gender: <input type="radio" name="gender" value="Male" />Male
+                <input type="radio" name="gender" checkedvalue="Female"/>Female
+        <br />
+        <br />
+        Nationality:  <select>
+                       <optgroup label="Asia"><option value="Pakistan" style="background-color:lawngreen">Pakistan</option>            
+                       <option value="India" style="background-color:orangered">India</option>
+                       <option value="China">China</option>
+
+                       <option value="Iran">Iran</option>
+                        </optgroup>
+                       </select>
+          </p>  </fieldset>
+        <br />
+        <br /><p>
+        Interests:  <input type="checkbox" name="Interests" value="Hockey"/>Hockey
+                    <input type="checkbox" name="Interests" value="Cricket"/>Cricket
+                    <input type="checkbox" name="Interests" value="Football" />Football
+                    <input type="checkbox"name="Interests" value="Baseball" />Baseball
+        <br />
+        <br />
+        Date Of Birth:   <input type="date" value="dob"/>
+        <br />
+        <br />
+        email address: <input type="email" name="email" />
+        <br />
+        <br />
+        Comments:
+        <br />
+        <textarea typeof="comments" rows="5" cols="30"></textarea>
+        <br />
+        <br />
+        upload Picture: <input type="file" name="dp" />
+        <br />
+        <input type="submit" value="upload"/>
+
+        </p>
+
+
+        <div bgcolor="blue">
+            <input type="submit" color="blue"/>
+        </div>
+
+
+
+
+
+
+    </form>
+</body>
+</html>
